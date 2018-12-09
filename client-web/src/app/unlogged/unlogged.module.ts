@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { UnloggedRoutingModule } from './unlogged-routing.module';
+import { UnloggedComponent } from './unlogged/unlogged.component';
+
 @NgModule({
-  declarations: [],
+  declarations: [UnloggedComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    UnloggedRoutingModule    
   ]
 })
 export class UnloggedModule { }

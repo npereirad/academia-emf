@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { UnloggedModule } from './unlogged/unlogged.module';
+import { AdminModule } from './admin/admin.module';
+import { UserModule } from './user/user.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +16,10 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UnloggedModule,
+    AdminModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
